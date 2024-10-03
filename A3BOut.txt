@@ -1,0 +1,75 @@
+Testing lastIndexOf method
+
+In 'The sixth sick Sheik's sixth sheep's sick but the sixteenth sick Sheik's sixtieth sheep's sicker': 
+sixth found last at 23
+sick found last at 90
+six found last at 73
+The found last at 0
+the found last at 46
+sixty found last at -1
+
+In 'xxxxxxxxxxxxxxxxxxxy': 
+xxxxxx was found last at 13
+xxxxxy was found last at 14
+y was found last at 19
+
+Testing regMatch() method
+
+Looking for pattern: ABC 
+Looking in string: ****BBABA999ABCABC
+Match: BBABA 
+
+
+
+Looking for pattern: ABC 123 XYZ 
+Looking in string: **BBB22AAYYCC3ZZZ**
+Match: CC 3 ZZZ 
+
+
+
+Looking for pattern: ABC123XYZ 123 XYZ 
+Looking in string: BBB222YYYCCC
+Match: BBB22 2 YYY 
+
+
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 
+Looking in string: 1234HelloThere456Friends---
+Match: 1234HelloThere456Friends 
+
+
+
+Looking for pattern: 0123456789 
+Looking in string: 1234HelloThere456Friends---
+Match: 1234 
+
+
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789 
+Looking in string: 1234HelloThere456Friends---
+Match: HelloThere 456 
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
+Looking in string: 1234HelloThere456Friends---
+Match: 1234HelloThere45 6 Friends 
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 
+Looking in string: R2D2IsAVeryWittyDroid
+Match: R2D2IsAVeryWittyDroid 
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 
+Looking in string: R2D2IsAVeryWittyDroid
+Match: R2D 2 
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 * 
+Looking in string: AA22-ABC123abc-ABC123***-BCA321***
+Match: ABC12 3 *** 
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 * 
+Looking in string: R2D2IsAVeryWittyDroid
+No match found!
+
+Looking for pattern: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 0123456789 
+Looking in string: 1234HelloThere456Friends---
+Match: 123 4 HelloThere 45 6 
+
